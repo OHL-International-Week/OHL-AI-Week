@@ -1,0 +1,652 @@
+{
+  "data": {
+    "id": 159397,
+    "dateTime": "2025-04-12T12:00:00Z",
+    "lastCalculationDate": "2026-02-12T07:35:07.912799Z",
+    "iterationId": 1008,
+    "squadHome": {
+      "id": 413,
+      "players": [
+        {
+          "id": 9709,
+          "shirtNumber": 18
+        },
+        {
+          "id": 9721,
+          "shirtNumber": 24
+        },
+        {
+          "id": 9930,
+          "shirtNumber": 4
+        },
+        {
+          "id": 10000,
+          "shirtNumber": 3
+        },
+        {
+          "id": 10207,
+          "shirtNumber": 8
+        },
+        {
+          "id": 10495,
+          "shirtNumber": 19
+        },
+        {
+          "id": 45437,
+          "shirtNumber": 10
+        },
+        {
+          "id": 85070,
+          "shirtNumber": 16
+        },
+        {
+          "id": 89932,
+          "shirtNumber": 17
+        },
+        {
+          "id": 103613,
+          "shirtNumber": 29
+        },
+        {
+          "id": 104135,
+          "shirtNumber": 30
+        },
+        {
+          "id": 104150,
+          "shirtNumber": 12
+        },
+        {
+          "id": 116141,
+          "shirtNumber": 21
+        },
+        {
+          "id": 118521,
+          "shirtNumber": 38
+        },
+        {
+          "id": 123557,
+          "shirtNumber": 11
+        },
+        {
+          "id": 133354,
+          "shirtNumber": 23
+        },
+        {
+          "id": 135788,
+          "shirtNumber": 6
+        },
+        {
+          "id": 135795,
+          "shirtNumber": 14
+        },
+        {
+          "id": 135797,
+          "shirtNumber": 13
+        },
+        {
+          "id": 216571,
+          "shirtNumber": 33
+        }
+      ],
+      "startingPositions": [
+        {
+          "playerId": 9721,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 10000,
+          "position": "LEFT_WINGBACK_DEFENDER",
+          "positionSide": "LEFT"
+        },
+        {
+          "playerId": 10495,
+          "position": "RIGHT_WINGBACK_DEFENDER",
+          "positionSide": "RIGHT"
+        },
+        {
+          "playerId": 85070,
+          "position": "GOALKEEPER",
+          "positionSide": "CENTRE"
+        },
+        {
+          "playerId": 89932,
+          "position": "ATTACKING_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 103613,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE"
+        },
+        {
+          "playerId": 116141,
+          "position": "ATTACKING_MIDFIELD",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 118521,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 135788,
+          "position": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 135795,
+          "position": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 216571,
+          "position": "CENTER_FORWARD",
+          "positionSide": "CENTRE"
+        }
+      ],
+      "substitutions": [
+        {
+          "gameTime": {
+            "gameTime": "38:06.5950",
+            "gameTimeInSec": 2286.595
+          },
+          "playerId": 45437,
+          "toPosition": "ATTACKING_MIDFIELD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 116141,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "38:06.5950",
+            "gameTimeInSec": 2286.595
+          },
+          "playerId": 116141,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "ATTACKING_MIDFIELD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": 45437,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 45437,
+          "toPosition": "CENTRAL_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "ATTACKING_MIDFIELD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 89932,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "ATTACKING_MIDFIELD",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": 123557,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 123557,
+          "toPosition": "CENTER_FORWARD",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 89932,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 135788,
+          "toPosition": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE",
+          "fromPosition": "DEFENSE_MIDFIELD",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_SIDE_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 135795,
+          "toPosition": "CENTRAL_MIDFIELD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "DEFENSE_MIDFIELD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "45:00.0000",
+            "gameTimeInSec": 10000.0
+          },
+          "playerId": 216571,
+          "toPosition": "CENTER_FORWARD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "CENTER_FORWARD",
+          "fromPositionSide": "CENTRE",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_SIDE_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "73:44.8280",
+            "gameTimeInSec": 11724.828
+          },
+          "playerId": 10207,
+          "toPosition": "CENTER_FORWARD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 216571,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "73:44.8280",
+            "gameTimeInSec": 11724.828
+          },
+          "playerId": 216571,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "CENTER_FORWARD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": 10207,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 9930,
+          "toPosition": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 10495,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 10495,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "RIGHT_WINGBACK_DEFENDER",
+          "fromPositionSide": "RIGHT",
+          "exchangedPlayerId": 9930,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 45437,
+          "toPosition": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE",
+          "fromPosition": "CENTRAL_MIDFIELD",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 103613,
+          "toPosition": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "CENTRAL_DEFENDER",
+          "fromPositionSide": "CENTRE",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_SIDE_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 104135,
+          "toPosition": "CENTRAL_MIDFIELD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 135788,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 118521,
+          "toPosition": "RIGHT_WINGBACK_DEFENDER",
+          "positionSide": "RIGHT",
+          "fromPosition": "CENTRAL_DEFENDER",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 135788,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "DEFENSE_MIDFIELD",
+          "fromPositionSide": "CENTRE",
+          "exchangedPlayerId": 104135,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "84:28.3740",
+            "gameTimeInSec": 12368.374
+          },
+          "playerId": 135795,
+          "toPosition": "CENTRAL_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "CENTRAL_MIDFIELD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_SIDE_CHANGE"
+        }
+      ],
+      "startingFormation": "5-2-2-1",
+      "formations": [
+        {
+          "gameTime": "00:00.0000",
+          "gameTimeInSec": 0.0,
+          "formation": "5-2-2-1"
+        },
+        {
+          "gameTime": "45:00.0000",
+          "gameTimeInSec": 10000.0,
+          "formation": "5-3-2"
+        }
+      ],
+      "coachId": 2851
+    },
+    "squadAway": {
+      "id": 4554,
+      "players": [
+        {
+          "id": 10608,
+          "shirtNumber": 21
+        },
+        {
+          "id": 44671,
+          "shirtNumber": 6
+        },
+        {
+          "id": 76075,
+          "shirtNumber": 24
+        },
+        {
+          "id": 83771,
+          "shirtNumber": 10
+        },
+        {
+          "id": 103611,
+          "shirtNumber": 7
+        },
+        {
+          "id": 103969,
+          "shirtNumber": 1
+        },
+        {
+          "id": 145178,
+          "shirtNumber": 33
+        },
+        {
+          "id": 165650,
+          "shirtNumber": 20
+        },
+        {
+          "id": 165651,
+          "shirtNumber": 13
+        },
+        {
+          "id": 165653,
+          "shirtNumber": 25
+        },
+        {
+          "id": 165655,
+          "shirtNumber": 9
+        },
+        {
+          "id": 165661,
+          "shirtNumber": 8
+        },
+        {
+          "id": 165732,
+          "shirtNumber": 11
+        },
+        {
+          "id": 169796,
+          "shirtNumber": 4
+        },
+        {
+          "id": 169798,
+          "shirtNumber": 18
+        },
+        {
+          "id": 216714,
+          "shirtNumber": 28
+        },
+        {
+          "id": 216727,
+          "shirtNumber": 42
+        },
+        {
+          "id": 216751,
+          "shirtNumber": 2
+        }
+      ],
+      "startingPositions": [
+        {
+          "playerId": 10608,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE"
+        },
+        {
+          "playerId": 76075,
+          "position": "ATTACKING_MIDFIELD",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 103611,
+          "position": "LEFT_WINGBACK_DEFENDER",
+          "positionSide": "LEFT"
+        },
+        {
+          "playerId": 103969,
+          "position": "GOALKEEPER",
+          "positionSide": "CENTRE"
+        },
+        {
+          "playerId": 165650,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 165651,
+          "position": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_LEFT"
+        },
+        {
+          "playerId": 165655,
+          "position": "CENTER_FORWARD",
+          "positionSide": "CENTRE"
+        },
+        {
+          "playerId": 165661,
+          "position": "ATTACKING_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 169796,
+          "position": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 169798,
+          "position": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT"
+        },
+        {
+          "playerId": 216751,
+          "position": "RIGHT_WINGBACK_DEFENDER",
+          "positionSide": "RIGHT"
+        }
+      ],
+      "substitutions": [
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 10608,
+          "toPosition": "LEFT_WINGBACK_DEFENDER",
+          "positionSide": "LEFT",
+          "fromPosition": "CENTRAL_DEFENDER",
+          "fromPositionSide": "CENTRE",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 103611,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "LEFT_WINGBACK_DEFENDER",
+          "fromPositionSide": "LEFT",
+          "exchangedPlayerId": 145178,
+          "substitutionType": "SUB_OFF"
+        },
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 145178,
+          "toPosition": "CENTER_FORWARD",
+          "positionSide": "CENTRE",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 103611,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 165651,
+          "toPosition": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "DEFENSE_MIDFIELD",
+          "fromPositionSide": "CENTRE_LEFT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 165655,
+          "toPosition": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_LEFT",
+          "fromPosition": "CENTER_FORWARD",
+          "fromPositionSide": "CENTRE",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "59:40.2060",
+            "gameTimeInSec": 10880.206
+          },
+          "playerId": 169796,
+          "toPosition": "CENTRAL_DEFENDER",
+          "positionSide": "CENTRE",
+          "fromPosition": "CENTRAL_DEFENDER",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": null,
+          "substitutionType": "POSITION_SIDE_CHANGE"
+        },
+        {
+          "gameTime": {
+            "gameTime": "90:00.0000 (+02:54.6610)",
+            "gameTimeInSec": 12874.661
+          },
+          "playerId": 83771,
+          "toPosition": "DEFENSE_MIDFIELD",
+          "positionSide": "CENTRE_RIGHT",
+          "fromPosition": "BANK",
+          "fromPositionSide": "UNKNOWN",
+          "exchangedPlayerId": 169798,
+          "substitutionType": "SUB_ON"
+        },
+        {
+          "gameTime": {
+            "gameTime": "90:00.0000 (+02:54.6610)",
+            "gameTimeInSec": 12874.661
+          },
+          "playerId": 169798,
+          "toPosition": "BANK",
+          "positionSide": "UNKNOWN",
+          "fromPosition": "DEFENSE_MIDFIELD",
+          "fromPositionSide": "CENTRE_RIGHT",
+          "exchangedPlayerId": 83771,
+          "substitutionType": "SUB_OFF"
+        }
+      ],
+      "startingFormation": "5-2-2-1",
+      "formations": [
+        {
+          "gameTime": "00:00.0000",
+          "gameTimeInSec": 0.0,
+          "formation": "5-2-2-1"
+        }
+      ],
+      "coachId": 8225
+    },
+    "stadiumId": 3911
+  },
+  "status": 200,
+  "message": "READ_MATCH"
+}
