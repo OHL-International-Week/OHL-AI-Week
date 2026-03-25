@@ -21,37 +21,37 @@ PLAYS keepers pass an average of 4 out of 7 core thresholds. Non-progressors pas
 These 7 metrics should be the foundation of data-driven goalkeeper scouting. Each one is: statistically significant (p < 0.05 after correction), important in prediction models (SHAP + tree importance), reliable across matches (CV < 0.65), and not a proxy for team/league quality.
 
 ### 1. Defensive IMPECT Score
-**What it measures:** The goalkeeper's overall defensive impact — how much he influences the game when the opponent has the ball. Combines interceptions, positioning interventions, and defensive actions into a single composite.
+**What it measures:** Impect's Defensive IMPECT score includes all defensive Packing KPIs — it quantifies how many opponents a goalkeeper effectively removes from play through defensive actions (interceptions, recoveries, duels won). Each action is weighted by its empirical influence on preventing goals.
 
-**Why it predicts progression:** Keepers who progress are not passive shot-waiters. They actively read the game and intervene before shots happen. This is the strongest single predictor of progression.
+**Why it predicts progression:** Keepers who progress are not passive shot-waiters. They actively read the game, intercept through-balls, and intervene before shots happen. This is the strongest single predictor of progression.
 
 **Threshold:** Progressors median = 0.251, Non-progressors median = 0.230. Target: above 0.248 (65th percentile). Cohen's d = 0.39 (medium effect).
 
 ### 2. Total Touches
-**What it measures:** How many times the goalkeeper touches the ball per match. Includes passes, goal kicks, catches, and punches.
+**What it measures:** Sum of all events in defensive play (directly after the opposition is in possession) and events in offensive play (whilst the team is in possession). Counts every ball contact including passes, goal kicks, catches, and punches.
 
 **Why it predicts progression:** Progressing keepers are involved in build-up play. They receive back-passes, initiate attacks, and function as an extra defender in possession. A keeper with 31+ touches per match is more involved than one with 28.
 
 **Threshold:** Progressors median = 31.0, Non-progressors median = 28.4. Target: above 30.9 (65th percentile). Cohen's d = 0.38.
 
-### 3. Passing Accuracy
-**What it measures:** Percentage of passes completed successfully. The most reliable metric in the dataset (CV = 0.17 — very stable match-to-match).
+### 3. Passing Accuracy (Pass Success Rate)
+**What it measures:** The percentage of successful passes in relation to the total number of passes, excluding neutral passes. Includes low passes, diagonal passes, crosses, and set pieces. The most reliable metric in the dataset (CV = 0.17 — very stable match-to-match).
 
 **Why it predicts progression:** Completing passes is the foundation of ball-playing ability. Teams building from the back need a goalkeeper they can trust under pressure. An accuracy above 80% indicates a keeper comfortable with the ball.
 
 **Threshold:** Progressors median = 80.1%, Non-progressors median = 77.1%. Target: above 77.4% (49th percentile). Cohen's d = 0.28.
 
 ### 4-6. IMPECT Score (Overall / Without Goals / With Post-Shot xG)
-**What it measures:** Three variants of the overall Impect composite score. These combine offensive and defensive contributions, bypassed opponents, and general game influence into a single number. The variants differ only in how goals are factored in.
+**What it measures:** Three variants of Impect's overall composite score. All include 13 Packing KPIs (measuring how many opponents are bypassed through passes, dribbles, and other actions), weighted by their empirical influence on goal-scoring probability. The "without goals" variant excludes goals scored; the "with post-shot xG" variant replaces actual goals with post-shot expected goals for a smoother signal. All three are highly correlated (r > 0.99).
 
-**Why it predicts progression:** These capture the total package — a keeper who influences the game across all phases. All three are highly correlated (r > 0.99) and measure essentially the same underlying concept, so use whichever is available.
+**Why it predicts progression:** These capture the total package — a keeper who influences the game across all phases. Use whichever variant is available.
 
 **Threshold:** Progressors median = 0.344, Non-progressors median = 0.322. Target: above 0.342 (60th percentile). Cohen's d = 0.38.
 
-### 7. Successful Launches %
-**What it measures:** When the goalkeeper plays a long ball, how often it reaches a teammate.
+### 7. Successful Launches % (Goal Kick Success Rate)
+**What it measures:** The ratio of successful goal kicks to all goal kicks (Impect definition: `Successful Goal Kicks / (Successful + Unsuccessful)`). Measures how often a goalkeeper's goal kicks reach a teammate.
 
-**Why it predicts progression:** Long distribution is a key tactical weapon. A keeper who can accurately switch play or launch counter-attacks has direct value in game management. Accuracy above 42% is the benchmark.
+**Why it predicts progression:** Goal kick quality is a key tactical weapon. A keeper who can reliably find teammates from goal kicks gives his team an advantage in restarting play. Accuracy above 42% is the benchmark.
 
 **Threshold:** Progressors median = 42.4%, Non-progressors median = 39.8%. Target: above 41.8% (60th percentile). Cohen's d = 0.24.
 
@@ -63,13 +63,13 @@ These metrics add value but come with caveats. Use them to enrich the picture, n
 
 | Metric | What It Adds | Caveat |
 |--------|-------------|--------|
-| **Caught High Balls %** | Aerial dominance — the only traditional GK skill that predicts progression (d=0.34) | Higher match-to-match variance (CV=0.96); need a full season to be reliable |
-| **Low Pass Score** | Quality of short passing in build-up | Reliable (CV=0.53) but moderate effect size (d=0.23) |
-| **Diagonal Pass Score** | Quality of diagonal distribution | Higher variance (CV=1.75); use cautiously |
-| **Goal Kick Score** | Quality of goal kicks specifically | Not statistically significant for progression, but SHAP ranks it 4th — suggests non-linear effects |
-| **Foot Usage Ratio** | Measures two-footedness (% right vs left foot) | SHAP ranks it #1 but not statistically significant — likely captures tactical style rather than quality |
-| **Defensive Touches Outside Box** | Sweeper activity — willingness to leave the goal area | Moderate variance (CV=1.07); needs at least 10+ matches to measure |
-| **Caught + Punched High Balls %** | Broader aerial intervention metric | Borderline significance (p=0.055) |
+| **Caught High Balls %** | Percentage of opposition high balls (from corners, crosses, free kicks in final third) that the GK catches. Aerial dominance — the only traditional GK skill that predicts progression (d=0.34) | Higher match-to-match variance (CV=0.96); need a full season to be reliable |
+| **Low Pass Score** | Composite score covering all KPIs related to low passes (foot-played passes reaching max chest height). Includes bypassed opponents, ball losses, and completion from short distribution | Reliable (CV=0.53) but moderate effect size (d=0.23) |
+| **Diagonal Pass Score** | Composite score for high balls played from centre/wide that switch play. Includes completion, bypassed opponents, and ball losses from diagonal distribution | Higher variance (CV=1.75); use cautiously |
+| **Goal Kick Score** | Composite score specifically for the goal kick set piece — covers bypassed opponents, successful/unsuccessful outcomes, and xG created from goal kicks | Not statistically significant for progression, but SHAP ranks it 4th — suggests non-linear effects |
+| **Foot Usage Ratio** | Ratio of passes made with right (or left) foot to total passes. Measures two-footedness | SHAP ranks it #1 but not statistically significant — likely captures tactical style rather than quality |
+| **Defensive Touches Outside Box** | Total defensive ball contacts outside the penalty area per match. Proxy for sweeper-keeper activity | Moderate variance (CV=1.07); needs at least 10+ matches to measure |
+| **Caught + Punched High Balls %** | Broader than Caught % — includes punched clearances in addition to catches, as a share of total opposition high balls | Borderline significance (p=0.055) |
 
 ---
 
