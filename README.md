@@ -81,15 +81,28 @@ jupyter notebook GK_Scouting_Demo.ipynb
 ## Project Structure
 
 ```
-├── Pipeline/
-│   ├── build_full_kpi_dataset.py   ← Extract 1,009 KPIs from match files
-│   ├── kpi_experiments.py          ← 6-method feature selection + data-driven N
-│   ├── run_pipeline.py             ← 3-step: find → weight → score
-│   ├── projection.py               ← Project higher-league performance
-│   └── output/                     ← All CSVs + visualizations
-├── Demo/GK_Scouting_Demo.ipynb     ← Presentation notebook
-├── Docs/                           ← Project briefing documents
-├── GK_Data/                        ← Raw data (693 keepers, match files)
+├── Pipeline/                              ← Production pipeline
+│   ├── build_full_kpi_dataset.py          ← Extract 1,009 KPIs from match files
+│   ├── kpi_experiments.py                 ← 6-method feature selection + data-driven N
+│   ├── run_pipeline.py                    ← 3-step: find → weight → score
+│   ├── projection.py                      ← Project higher-league performance
+│   ├── build_projection_dataset.py        ← Load post-transfer KPIs
+│   ├── generate_demo_assets.py            ← Generate exploration visualizations
+│   └── output/                            ← All CSVs + visualizations (43 files)
+├── Demo/
+│   └── GK_Scouting_Demo.ipynb             ← Presentation notebook (47 cells)
+├── Research/                              ← Earlier exploration & experiments
+│   ├── Questions/                         ← Initial Q1/Q2/Q3 analyses
+│   ├── KPIs/                              ← KPI weighting experiments
+│   ├── Seperate KPI and Model Research/   ← Standalone model notebooks
+│   ├── src/                               ← Modular research code
+│   ├── shared/                            ← Shared data utilities
+│   └── output/                            ← Research outputs
+├── Docs/                                  ← Project briefing & literature
+│   ├── Project briefing.docx
+│   ├── Literature Review.docx
+│   └── Kickoff.pptx
+├── GK_Data/                               ← Raw data (693 keepers, match files)
 ├── requirements.txt
 └── README.md
 ```
