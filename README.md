@@ -102,7 +102,6 @@ jupyter notebook GK_Scouting_Demo.ipynb
 │   ├── Project briefing.docx
 │   ├── Literature Review.docx
 │   └── Kickoff.pptx
-├── GK_Data/                               ← Raw data (693 keepers, match files)
 ├── requirements.txt
 └── README.md
 ```
