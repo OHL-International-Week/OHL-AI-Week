@@ -4,10 +4,6 @@
 # macOS
 .DS_Store
 
-# Office documents
-*.pptx
-*.docx
-
 # Python
 __pycache__/
 *.py[cod]
@@ -20,8 +16,12 @@ __pycache__/
 .vscode/
 .idea/
 
-# Output artifacts
-# output/
+# Data (too large for git, ~24GB)
+# GK_Data/
 
-#Data
-GK_Data/
+# Cache files
+pipeline/output/keeper_features.csv
+
+# Office documents in docs/
+docs/*.pptx
+docs/*.docx
