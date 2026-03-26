@@ -38,19 +38,22 @@ Shot-stopping metrics do **not** differentiate progressors from non-progressors.
 pip install -r requirements.txt
 
 # Step 1: Build the full KPI dataset (extracts 1,009 KPIs from match files, ~5 min)
-python pipeline/build_full_kpi_dataset.py
+python Pipeline/build_full_kpi_dataset.py
 
 # Step 2: Run 6-method KPI experiments + data-driven feature count (~15 min)
-python pipeline/kpi_experiments.py
+python Pipeline/kpi_experiments.py
 
 # Step 3: Run the scoring pipeline (~8 min)
-python pipeline/run_pipeline.py
+python Pipeline/run_pipeline.py
+
+# Step 4: Project higher-league performance (~2 min)
+python Pipeline/projection.py
 ```
 
 ### Demo Notebook
 
 ```bash
-cd demo
+cd Demo
 jupyter notebook GK_Scouting_Demo.ipynb
 ```
 
@@ -78,13 +81,14 @@ jupyter notebook GK_Scouting_Demo.ipynb
 ## Project Structure
 
 ```
-├── pipeline/
+├── Pipeline/
 │   ├── build_full_kpi_dataset.py   ← Extract 1,009 KPIs from match files
 │   ├── kpi_experiments.py          ← 6-method feature selection + data-driven N
 │   ├── run_pipeline.py             ← 3-step: find → weight → score
+│   ├── projection.py               ← Project higher-league performance
 │   └── output/                     ← All CSVs + visualizations
-├── demo/GK_Scouting_Demo.ipynb     ← Presentation notebook (answers all 3 questions)
-├── docs/                           ← Project briefing documents
+├── Demo/GK_Scouting_Demo.ipynb     ← Presentation notebook
+├── Docs/                           ← Project briefing documents
 ├── GK_Data/                        ← Raw data (693 keepers, match files)
 ├── requirements.txt
 └── README.md
@@ -116,6 +120,16 @@ Tested 5 to 100 features with repeated 5-fold CV (3 seeds = 15 evaluations per p
 3. Out-of-fold probabilities (honest — each keeper scored by a model that never saw them)
 4. Score = 60% model probability + 40% weighted KPI performance
 5. Percentile-ranked to 1–100
+
+### Higher-League Projection (Step 4)
+
+Using 130 keepers who already transferred up, we measure how each KPI changes at the higher level:
+
+- **3-layer approach:** retention rate (default) → linear regression → league-gap adjusted
+- Best method per KPI chosen by 5-fold CV R²
+- **Median retention = 1.00** — most distribution KPIs carry over unchanged
+- 7/29 KPIs significantly change when stepping up (paired t-test)
+- Projections are descriptive ("what typically happens") rather than precise individual predictions
 
 ### Signal vs Noise Tiers
 
